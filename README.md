@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Entornos de Desarrollo: Repasando lo que sabemos de Git
 
 ## Creo el repositorio y lo clono:
@@ -649,3 +650,6 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 ```CODE
 
 ```
+=======
+# ejercicio-git-libro
+>>>>>>> d22b249 (Initial commit)
