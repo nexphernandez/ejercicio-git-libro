@@ -33,5 +33,24 @@ pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ mkdir capitulos
 pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > capitulos/capitulo
 1.txt
 Git es un sistema de control de versiones ideado por Linux Trovals.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "Capitulo1
+ añadido."
+[main 8114bc9] Capitulo1 añadido.
+ 2 files changed, 38 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+ create mode 100644 capitulos/capitulo1.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log
+commit 8114bc9814037ad0589f487bd405217626f19a77 (HEAD -> main)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:43:00 2024 +0100
+
+    Capitulo1 añadido.
+
+commit d22b24951cf408609fdda8ec0f3030bb595a5672 (origin/main, origin/HEAD)
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
 ```
 
