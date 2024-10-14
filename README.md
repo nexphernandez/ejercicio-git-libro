@@ -176,9 +176,9 @@ D)
 +    Initial commit
  ```
  
-## Ejercicio 2:
-
-```Code
++## Ejercicio 2:
++
++```Code
 +pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
 +pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit "cambios rea
 l
