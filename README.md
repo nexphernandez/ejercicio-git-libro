@@ -288,3 +288,35 @@ pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch -av
   remotes/origin/HEAD -> origin/main
   remotes/origin/main d22b249 Initial commit
 ```
+
+## Ejercicio 6:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > capitulos/capitulo
+4.txt
+  En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[C^[[C^[[C
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git comit -m "capitulo.4
+ añadido."
+git: 'comit' no es un comando de git. Mira 'git --help'.
+
+El comando más similar es
+        commit
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "capitulo.4 añadido."
+[main 0f1a97e] capitulo.4 añadido.
+ 2 files changed, 42 insertions(+), 5 deletions(-)
+ create mode 100644 capitulos/capitulo4.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --garph --all --
+online
+fatal: argumento no reconocido: --garph
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --garph --all --oneline
+fatal: argumento no reconocido: --garph
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
+* 0f1a97e (HEAD -> main) capitulo.4 añadido.
+* 78eb6b0 (bibliografia) Añadido el indice.
+* f35f7fe Se crea el indice.
+* 7e49370 capitulo 3 añadido.
+* 12dbbfb cambios realizados.
+* 8114bc9 Capitulo1 añadido.
+* d22b249 (origin/main, origin/HEAD) Initial commit
+```
