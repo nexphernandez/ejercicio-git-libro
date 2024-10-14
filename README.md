@@ -411,3 +411,88 @@ pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
 ```
 
 ## Ejercicio 9:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch bibliografia           
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git checkout bibliografia
+M       README.md
+Cambiado a rama 'bibliografia'
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > bibliografia.txt   
+Scott Chacon and Ben Straub. Pro Git. Apress.
+Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -a -m "Añadida nueva ref
+erencia bibliográfica."
+[bibliografia 474a922] Añadida nueva referencia bibliográfica.
+ 2 files changed, 93 insertions(+), 1 deletion(-)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git checkout main        
+Cambiado a rama 'main'
+Tu rama está adelantada a 'origin/main' por 3 commits.
+  (usa "git push" para publicar tus commits locales)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > bibliografia.txt   
+- Chacon, S. and Straub, B. Pro Git. Apress.
+- Loeliger, J. and McCullough, M. Version control with Git. O'Reilly.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -a -m "Añadida nueva ref
+erencia bibliográfica."
+[main eaff202] Añadida nueva referencia bibliográfica.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git merge bibliografia
+Auto-fusionando bibliografia.txt
+CONFLICTO (contenido): Conflicto de fusión en bibliografia.txt
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "Cambios"
+U       bibliografia.txt
+error: No es posible realizar un commit porque tienes archivos sin fusionar.
+ayuda: Corrígelos en el árbol de trabajo y entonces usa 'git add/rm <archivo>',
+ayuda: como sea apropiado, para marcar la resolución y realizar un commit.
+fatal: Saliendo porque existe un conflicto sin resolver.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commmit -m "cambios"
+git: 'commmit' no es un comando de git. Mira 'git --help'.
+
+El comando más similar es
+        commit
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "cambios" 
+[main 9ed9dff] cambios
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git merge bibliografia  
+Ya está actualizado.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git nano bibliografia
+git: 'nano' no es un comando de git. Mira 'git --help'.
+
+Los comandos más similares son
+        annotate
+        daemon
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git nano bibliografia.txt
+git: 'nano' no es un comando de git. Mira 'git --help'.
+
+Los comandos más similares son
+        annotate
+        daemon
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ nano bibliografia.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git nano bibliografia.txt
+git: 'nano' no es un comando de git. Mira 'git --help'.
+
+Los comandos más similares son
+        annotate
+        daemon
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ 
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git nano bibliografia    
+git: 'nano' no es un comando de git. Mira 'git --help'.
+
+Los comandos más similares son
+        annotate
+        daemon
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "Cambios"
+[main 1448407] Cambios
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git push
+Enumerando objetos: 26, listo.
+Contando objetos: 100% (26/26), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (21/21), listo.
+Escribiendo objetos: 100% (21/21), 3.16 KiB | 3.16 MiB/s, listo.
+Total 21 (delta 9), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (9/9), completed with 1 local object.
+To https://github.com/nexphernandez/ejercicio-git-libro
+   f407bd0..1448407  main -> main
+```
