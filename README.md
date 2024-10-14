@@ -176,9 +176,9 @@ D)
 +    Initial commit
  ```
  
-+## Ejercicio 2:
-+
-+```Code
+## Ejercicio 2:
+
+```Code
 +pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
 +pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit "cambios rea
 l
@@ -230,7 +230,8 @@ es (usa "git add" para hacerles seguimiento)
 ++```Code
 ++pro@jpexposito-VirtualBox:~$ git clone https://github.com/nexphernandez
 /:
-+```
++
+```Code
 \ No newline at end of file
 diff --git a/capitulos/capitulo2.txt b/capitulos/capitulo2.txt
 new file mode 100644
@@ -251,4 +252,39 @@ index 0000000..6e501ab
 +Git permite la creación de ramas lo que permite tener distintas versione
 s del mismo proyecto y trabajar de manera simultanea en ellas.
 pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ 
+```
+
+
+## Ejercicio 4:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > indice.txt
+git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "Se crea e
+l indice."
+[main f35f7fe] Se crea el indice.
+ 2 files changed, 151 insertions(+)
+ create mode 100644 indice.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ echo "Indice de los capi
+tulos, con conceptos avanzados de git" >> indice.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit "Añadido el i
+ndice."
+error: ruta especificada 'Añadido el indice.' no concordó con ningún archivo conocido por git
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m"Añadido el indice."
+[main 78eb6b0] Añadido el indice.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git annotate indice.txt
+78eb6b08        (nexphernandez  2024-10-14 01:06:55 +0100       1)Indice de los capitulos, con conceptos avanzados de git
+```
+## Ejercicio 5:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch bibliografia
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch -av
+  bibliografia        78eb6b0 Añadido el indice.
+* main                78eb6b0 [adelante 5] Añadido el indice.
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main d22b249 Initial commit
 ```
