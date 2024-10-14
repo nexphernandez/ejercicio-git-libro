@@ -496,3 +496,39 @@ remote: Resolving deltas: 100% (9/9), completed with 1 local object.
 To https://github.com/nexphernandez/ejercicio-git-libro
    f407bd0..1448407  main -> main
 ```
+
+### Continuación en clase porque no sabia usar el nano.
+```Code
+pro@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ nano bibliogr
+afia
+pro@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ nano bibliografia.txt
+pro@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git commit -a
+ -m "Solucionando conflicto bibliografía."
+[main cfe3ef8] Solucionando conflicto bibliografía.
+ 1 file changed, 1 insertion(+)
+pro@jpexposito-VirtualBox:~/Documentos/ejercicio-git-libro$ git log --gra
+ph --all --oneline
+* cfe3ef8 (HEAD -> main) Solucionando conflicto bibliografía.
+* 9965ee5 (origin/main, origin/HEAD) Cambios
+* 1448407 Cambios
+*   9ed9dff cambios
+|\  
+| * 474a922 Añadida nueva referencia bibliográfica.
+* | eaff202 Añadida nueva referencia bibliográfica.
+|/  
+*   8a878c5 Merge branch 'bibliografia'
+|\  
+| * d45a34d Cambios
+| * 8c4fd67 Añadida primera referencia bibliográfica.
+* | f407bd0 Cambios
+* | 40c296f Añadida primera referencia bibliográfica.
+* | b79314f Cambios
+* | 0f1a97e capitulo.4 añadido.
+|/  
+* 78eb6b0 Añadido el indice.
+* f35f7fe Se crea el indice.
+* 7e49370 capitulo 3 añadido.
+* 12dbbfb cambios realizados.
+* 8114bc9 Capitulo1 añadido.
+* d22b249 Initial commit
+```
