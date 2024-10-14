@@ -320,3 +320,94 @@ pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
 * 8114bc9 Capitulo1 añadido.
 * d22b249 (origin/main, origin/HEAD) Initial commit
 ```
+## Ejercicio 7:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git checkout bibliografi
+a
+error: Los cambios locales de los siguientes archivos serán sobrescritos por checkout:
+        README.md
+Por favor realice un commit con los cambios o un stash antes de cambiar ramas.
+Abortando
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit "Cambios"
+error: ruta especificada 'Cambios' no concordó con ningún archivo conocido por git
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m"Cambios"
+[main b79314f] Cambios
+ 1 file changed, 32 insertions(+)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git checkout bibliografia      
+Cambiado a rama 'bibliografia'
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ cat > bibliografia.txt
+Chacon, S. and Straub, B. Pro Git. Apress.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git add .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git commit -m "Añadida p
+rimera referencia bibliográfica."
+[bibliografia 8c4fd67] Añadida primera referencia bibliográfica.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bibliografia.txt
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
+* 8c4fd67 (HEAD -> bibliografia) Añadida primera referencia bibliográfica.
+| * b79314f (main) Cambios
+| * 0f1a97e capitulo.4 añadido.
+|/  
+* 78eb6b0 Añadido el indice.
+* f35f7fe Se crea el indice.
+* 7e49370 capitulo 3 añadido.
+* 12dbbfb cambios realizados.
+* 8114bc9 Capitulo1 añadido.
+* d22b249 (origin/main, origin/HEAD) Initial commit
+```
+
+## Ejercicio 8:
+
+```Code
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git checkout main      
+Cambiado a rama 'main'
+Tu rama está adelantada a 'origin/main' por 7 commits.
+  (usa "git push" para publicar tus commits locales)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git merge bibliografia
+Auto-fusionando README.md
+CONFLICTO (contenido): Conflicto de fusión en README.md
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git merge bibliografia
+Auto-fusionando README.md
+Merge made by the 'ort' strategy.
+ README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
+*   8a878c5 (HEAD -> main) Merge branch 'bibliografia'
+|\  
+| * d45a34d (bibliografia) Cambios
+| * 8c4fd67 Añadida primera referencia bibliográfica.
+* | f407bd0 (origin/main, origin/HEAD) Cambios
+* | 40c296f Añadida primera referencia bibliográfica.
+* | b79314f Cambios
+* | 0f1a97e capitulo.4 añadido.
+|/  
+* 78eb6b0 Añadido el indice.
+* f35f7fe Se crea el indice.
+* 7e49370 capitulo 3 añadido.
+* 12dbbfb cambios realizados.
+* 8114bc9 Capitulo1 añadido.
+* d22b249 Initial commit
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch -d bibliografia
+Eliminada la rama bibliografia (era d45a34d).
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git log --graph --all --oneline
+*   8a878c5 (HEAD -> main) Merge branch 'bibliografia'
+|\  
+| * d45a34d Cambios
+| * 8c4fd67 Añadida primera referencia bibliográfica.
+* | f407bd0 (origin/main, origin/HEAD) Cambios
+* | 40c296f Añadida primera referencia bibliográfica.
+* | b79314f Cambios
+* | 0f1a97e capitulo.4 añadido.
+|/  
+* 78eb6b0 Añadido el indice.
+* f35f7fe Se crea el indice.
+* 7e49370 capitulo 3 añadido.
+* 12dbbfb cambios realizados.
+* 8114bc9 Capitulo1 añadido.
+* d22b249 Initial commit
+```
+
+## Ejercicio 9:
