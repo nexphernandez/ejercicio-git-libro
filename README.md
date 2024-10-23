@@ -768,6 +768,3 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 ## Ejercicio 3: Aplicar cambios de otra rama con Cherry-pick
 
 ```CODE
-
-=======
-# ejercicio-git-libro
