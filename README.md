@@ -1909,4 +1909,37 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
 ## Ejercicio 8: Restablecer un commit (Reset)
 
 ```Code
-
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "CAmbios ejercicio 8"
+[main 8c36f5f] CAmbios ejercicio 8
+ 1 file changed, 1 insertion(+)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log --oneline
+8c36f5f (HEAD -> main) CAmbios ejercicio 8
+f54e196 Mas cambios
+a86ecf9 (origin/main, origin/HEAD) revertir merge
+827f68c Cambios
+6477d9c Revert "cambios en la rama secundaria"
+e363700 Cambios
+5f94848 (nueva-funcionalidad) cambios en la rama secundaria29b2991 cambios
+2c69f92 cambios
+89acf4e Cambios
+731b409  Consigo hacer el git cherry pick
+6529672 Se añade capitulo 5
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git reset --hard HEAD~1
+HEAD is now at 5221ee4 Cambios
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log --oneline      
+5221ee4 (HEAD -> main) Cambios
+f54e196 Mas cambios
+a86ecf9 (origin/main, origin/HEAD) revertir merge
+478dc02 Revert "cambios en la rama secundaria"
+827f68c Cambios
+6477d9c Revert "cambios en la rama secundaria"
+e363700 Cambios
+5f94848 (nueva-funcionalidad) cambios en la rama secundaria29b2991 cambios
+2c69f92 cambios
+89acf4e Cambios
+731b409  Consigo hacer el git cherry pick
+6529672 Se añade capitulo 5
+6a5cb22 Añado ejercicio2
+```
