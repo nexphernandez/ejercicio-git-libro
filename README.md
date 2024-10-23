@@ -1898,4 +1898,15 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
 ## Ejercicio 7: Eliminar una etiqueta:
 
 ```Code
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git tag -d 
+1.0.0
+Deleted tag '1.0.0' (was dfaf1b1)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git push origin :refs/tags/1.0.0
+To https://github.com/nexphernandez/ejercicio-git-libro
+ - [deleted]         1.0.0
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+```
+## Ejercicio 8: Restablecer un commit (Reset)
+
+```Code
 
