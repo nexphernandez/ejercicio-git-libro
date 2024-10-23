@@ -768,3 +768,987 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 ## Ejercicio 3: Aplicar cambios de otra rama con Cherry-pick
 
 ```CODE
+commit 49544b3f8c18de52ffd6619fe7695f781378727e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:11:48 2024 +0100
+
+    commit temporal
+
+commit d7c3847fccf483e104b653554cc43a709bdccf92
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:04:18 2024 +0100
+
+    Ejercicio1
+
+commit 93d43be9dc7909d5af311ec2d7841b851b639d29 (tag: 1.0.0)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 16:01:09 2024 +0100
+
+    Modificaciones en el README
+
+commit cfe3ef8d60a676073b53a1b2a04f4f2f0fa9dabb
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 15:57:13 2024 +0100
+
+    Solucionando conflicto bibliografía.
+
+commit 9965ee5f03d6fa66a2af02d492c318de383629e0
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:05:17 2024 +0100
+
+    Cambios
+
+commit 144840787a600c4fd80e6bbb6a01c320028c9b81
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:02:52 2024 +0100
+
+    Cambios
+
+commit 9ed9dffe58afd7e4d784334ec061e3affcca71f1
+Merge: eaff202 474a922
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:49:13 2024 +0100
+
+    cambios
+
+commit eaff20241a61354969dc3f4d7259b83caac4af51
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:47:40 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 474a922bf8ed4e74fcf2ad984fdfde0b5c4f14e9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:44:43 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 8a878c5380617463b9baf7b65e9726e5f081c0ff
+Merge: f407bd0 d45a34d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:35:28 2024 +0100
+
+    Merge branch 'bibliografia'
+
+commit f407bd08a953da117aaa98752a3ed593e683a4b8
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 40c296f69d9951446e3828f7f8e301eb3534e950
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit d45a34d2b281ee901fd8893113cf4df02f23f668
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 8c4fd67e366bea9a794b61a25cd84fc9f66000d4
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit b79314ffaf320a62845817757bec7e03cd0f492e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:22:58 2024 +0100
+
+    Cambios
+
+commit 0f1a97ea0946dfc14789c1c22c7338182a8d60d9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:18:05 2024 +0100
+
+    capitulo.4 añadido.
+
+commit 78eb6b082d172b4b01476148e95fbfdcb9c30762
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:06:55 2024 +0100
+
+    Añadido el indice.
+
+commit f35f7fe2af38d8ada1537d677a6c750958a61a74
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:04:17 2024 +0100
+
+    Se crea el indice.
+
+commit 7e49370761f2ec0678da2c498a2163114023ba80
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:54:29 2024 +0100
+
+    capitulo 3 añadido.
+
+commit 12dbbfb5abd193c765574a5a63292be8bb4be866
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:45:02 2024 +0100
+
+    cambios realizados.
+
+commit 8114bc9814037ad0589f487bd405217626f19a77
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+    Capitulo1 añadido.
+
+commit d22b24951cf408609fdda8ec0f3030bb595a5672
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick d22b24951cf408609fdda8ec0f3030bb595a5672
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+error: could not apply d22b249... Initial commit
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+-pick",
+hint: run "git cherry-pick --abort".
+flict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalida
+error: pathspec 'nueva-funcionalida' did not match any file(s) known to git
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalidad
+error: Merging is not possible because you have unmerged fihint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit. 
+fatal: Exiting because of an unresolved conflict.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --abort
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalidad
+Switched to branch 'nueva-funcionalidad'
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log    
+commit 8153388608c4a8f81cc12dd4446a75a06333f1b8 (HEAD -> nueva-funcionalidad)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:22:24 2024 +0100
+
+    Se añade capitulo 5
+
+commit 9458af88019d4f49765ae0b09afdcf916cbac6cf (origin/main, origin/HEAD, main)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit 09f66627968238aacdddfb29b074ecc17338797d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:14:11 2024 +0100
+
+    Revert "commit temporal"
+
+    This reverts commit 49544b3f8c18de52ffd6619fe7695f781378727e.
+
+commit 49544b3f8c18de52ffd6619fe7695f781378727e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:11:48 2024 +0100
+
+    commit temporal
+
+commit d7c3847fccf483e104b653554cc43a709bdccf92
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:04:18 2024 +0100
+
+    Ejercicio1
+
+commit 93d43be9dc7909d5af311ec2d7841b851b639d29 (tag: 1.0.0)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 16:01:09 2024 +0100
+
+    Modificaciones en el README
+
+commit cfe3ef8d60a676073b53a1b2a04f4f2f0fa9dabb
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 15:57:13 2024 +0100
+
+    Solucionando conflicto bibliografía.
+
+commit 9965ee5f03d6fa66a2af02d492c318de383629e0
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:05:17 2024 +0100
+
+    Cambios
+
+commit 144840787a600c4fd80e6bbb6a01c320028c9b81
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:02:52 2024 +0100
+
+    Cambios
+
+commit 9ed9dffe58afd7e4d784334ec061e3affcca71f1
+Merge: eaff202 474a922
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:49:13 2024 +0100
+
+    cambios
+
+commit eaff20241a61354969dc3f4d7259b83caac4af51
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:47:40 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 474a922bf8ed4e74fcf2ad984fdfde0b5c4f14e9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:44:43 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 8a878c5380617463b9baf7b65e9726e5f081c0ff
+Merge: f407bd0 d45a34d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:35:28 2024 +0100
+
+    Merge branch 'bibliografia'
+
+commit f407bd08a953da117aaa98752a3ed593e683a4b8
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 40c296f69d9951446e3828f7f8e301eb3534e950
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit d45a34d2b281ee901fd8893113cf4df02f23f668
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 8c4fd67e366bea9a794b61a25cd84fc9f66000d4
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit b79314ffaf320a62845817757bec7e03cd0f492e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:22:58 2024 +0100
+
+    Cambios
+
+commit 0f1a97ea0946dfc14789c1c22c7338182a8d60d9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:18:05 2024 +0100
+
+    capitulo.4 añadido.
+
+commit 78eb6b082d172b4b01476148e95fbfdcb9c30762
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:06:55 2024 +0100
+
+    Añadido el indice.
+
+commit f35f7fe2af38d8ada1537d677a6c750958a61a74
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:04:17 2024 +0100
+
+    Se crea el indice.
+
+commit 7e49370761f2ec0678da2c498a2163114023ba80
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:54:29 2024 +0100
+
+    capitulo 3 añadido.
+
+commit 12dbbfb5abd193c765574a5a63292be8bb4be866
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:45:02 2024 +0100
+
+    cambios realizados.
+
+commit 8114bc9814037ad0589f487bd405217626f19a77
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:43:00 2024 +0100
+    Capitulo1 añadido.
+
+commit d22b24951cf408609fdda8ec0f3030bb595a5672
+om>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick d22b24951cf408609fdda8ec0f3030bb595a5672
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+error: could not apply d22b249... Initial commit
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "Cambios"
+[main 523b7d2] Cambios
+ Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+ Date: Thu Oct 10 18:00:34 2024 +0100
+flict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "Cambios"
+[main 523b7d2] Cambios
+ Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+ Date: Thu Oct 10 18:00:34 2024 +0100
+[main 523b7d2] Cambios
+ Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+ Date: Thu Oct 10 18:00:34 2024 +0100
+ Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+ Date: Thu Oct 10 18:00:34 2024 +0100
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+
+
+
+
+
+
+
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 459 bytes | 459.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nexphernandez/ejercicio-git-libro
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .    
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'Cambios' did not match any file(s) known to git
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Aborting
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit - m "cambios"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'cambios' did not match any file(s) known to git
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios" 
+[main dc79655] cambios
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalidad
+Switched to branch 'nueva-funcionalidad'
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:22:24 2024 +0100
+
+
+commit 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Auto-merging README.md
+error: could not apply 9458af8... Añado ejercicio2
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>> 
+U       README.md
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios"
+[main e73dfb2] cambios
+ Date: Wed Oct 23 18:21:05 2024 +0100
+ 1 file changed, 7 deletions(-)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>> 
+error: no cherry-pick or revert in progress
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Auto-merging README.md
+
+~
+
+~
+error: could not apply 9458af8... Añado ejercicio2
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>>
+hint: Waiting for your editor to close the file...
+[No se ha escrito nada al disco desde el último cambio]
+
+Pulse INTRO o escriba una orden para continuar
+[No se ha escrito nada al disco desde el último cambio]
+
+Pulse INTRO o escriba una orden para continuar
+Aborting commit due to empty commit message.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --abort
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Auto-merging README.md
+error: could not apply 9458af8... Añado ejercicio2
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>> 
+[main c77db0d] Añado ejercicio2
+ Date: Wed Oct 23 18:21:05 2024 +0100
+ 1 file changed, 60 insertions(+)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git update-ref -d CHERRY_PICK_HEAD
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue        
+>>
+error: no cherry-pick or revert in progress
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+error: could not apply 9458af8... Añado ejercicio2
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit "cambios"
+fatal: cannot do a partial commit during a cherry-pick.
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios"
+[main 42ef983] cambios
+ Date: Wed Oct 23 18:21:05 2024 +0100
+ 1 file changed, 3 insertions(+)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+Counting objects: 100% (14/14), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.51 KiB | 1.51 MiB/s, done.
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/nexphernandez/ejercicio-git-libro
+   523b7d2..42ef983  main -> main
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Auto-merging README.md
+error: could not apply 9458af8... Añado ejercicio2
+hint: After resolving the conflicts, mark them with
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --abort
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --abort
+error: no cherry-pick or revert in progress
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios"
+[main 7078c24] cambios
+ 1 file changed, 2 deletions(-)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381 bytes | 381.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nexphernandez/ejercicio-git-libro
+   42ef983..7078c24  main -> main
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick d22b249
+Auto-merging README.md
+error: could not apply d22b249... Initial commit
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>> 
+error: no cherry-pick or revert in progress
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+CONFLICT (content): Merge conflict in README.md
+error: could not apply 9458af8... Añado ejercicio2
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m "cambios"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --continue
+>>
+error: no cherry-pick or revert in progress
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 9458af88019d4f49765ae0b09afdcf916cbac6cf
+k --skip".
+-pick",
+hint: run "git cherry-pick --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-k --skip".pick --skip                                                -pick",
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git push origin main                                                  flict false"
+Everything up-to-date                                      pick --skip
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log    
+commit 6a5cb22e6473b74d75544d34abcaec284a1fa936 (HEAD -> main, origin/main, origin/HEAD)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit 579c975dd288ca1835be21ed15090f71a3e53a66
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+
+commit 7078c24abe2e4e776b5bf6c304cdec048673830a
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 23:10:47 2024 +0100
+
+    cambios
+
+commit 42ef9837ea0849bf6c603a7bebd5a0932a09dcb1
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    cambios
+
+commit c77db0d4aa4bb69aff22af2cacda1af4f3b07d40
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit e73dfb277fd3dbac409eac629fc9d66d7ca17b8c
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    cambios
+
+commit dc796557ce0f3fff8dac1b8ab9a34e621e4d5378
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:45:26 2024 +0100
+
+    cambios
+
+commit 523b7d2449e8f36126c8c1a36fc3bd6a0734930c
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Cambios
+
+commit 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit 09f66627968238aacdddfb29b074ecc17338797d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:14:11 2024 +0100
+
+    Revert "commit temporal"
+
+    This reverts commit 49544b3f8c18de52ffd6619fe7695f781378727e.
+
+commit 49544b3f8c18de52ffd6619fe7695f781378727e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:11:48 2024 +0100
+
+    commit temporal
+
+commit d7c3847fccf483e104b653554cc43a709bdccf92
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:04:18 2024 +0100
+
+    Ejercicio1
+
+commit 93d43be9dc7909d5af311ec2d7841b851b639d29 (tag: 1.0.0)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 16:01:09 2024 +0100
+
+    Modificaciones en el README
+
+commit cfe3ef8d60a676073b53a1b2a04f4f2f0fa9dabb
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 15:57:13 2024 +0100
+
+    Solucionando conflicto bibliografía.
+
+commit 9965ee5f03d6fa66a2af02d492c318de383629e0
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:05:17 2024 +0100
+
+    Cambios
+
+commit 144840787a600c4fd80e6bbb6a01c320028c9b81
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:02:52 2024 +0100
+
+    Cambios
+
+commit 9ed9dffe58afd7e4d784334ec061e3affcca71f1
+Merge: eaff202 474a922
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:49:13 2024 +0100
+
+    cambios
+
+commit eaff20241a61354969dc3f4d7259b83caac4af51
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:47:40 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 474a922bf8ed4e74fcf2ad984fdfde0b5c4f14e9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:44:43 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 8a878c5380617463b9baf7b65e9726e5f081c0ff
+Merge: f407bd0 d45a34d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:35:28 2024 +0100
+
+    Merge branch 'bibliografia'
+
+commit f407bd08a953da117aaa98752a3ed593e683a4b8
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 40c296f69d9951446e3828f7f8e301eb3534e950
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit d45a34d2b281ee901fd8893113cf4df02f23f668
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 8c4fd67e366bea9a794b61a25cd84fc9f66000d4
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit b79314ffaf320a62845817757bec7e03cd0f492e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:22:58 2024 +0100
+
+    Cambios
+
+commit 0f1a97ea0946dfc14789c1c22c7338182a8d60d9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:18:05 2024 +0100
+
+    capitulo.4 añadido.
+
+commit 78eb6b082d172b4b01476148e95fbfdcb9c30762
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:06:55 2024 +0100
+
+    Añadido el indice.
+
+commit f35f7fe2af38d8ada1537d677a6c750958a61a74
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:04:17 2024 +0100
+
+    Se crea el indice.
+
+commit 7e49370761f2ec0678da2c498a2163114023ba80
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:54:29 2024 +0100
+
+    capitulo 3 añadido.
+
+commit 12dbbfb5abd193c765574a5a63292be8bb4be866
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:45:02 2024 +0100
+
+    cambios realizados.
+
+commit 8114bc9814037ad0589f487bd405217626f19a77
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:43:00 2024 +0100
+
+    Capitulo1 añadido.
+commit d22b24951cf408609fdda8ec0f3030bb595a5672
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalidad
+Switched to branch 'nueva-funcionalidad'
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log    
+commit 8153388608c4a8f81cc12dd4446a75a06333f1b8 (HEAD -> nueva-funcionalidad)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:22:24 2024 +0100
+
+
+commit 9458af88019d4f49765ae0b09afdcf916cbac6cf
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkouSwitched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick --skip
+fatal: cherry-pick failed
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git cherry-pick 8153388608c4a8f81cc12dd4446a75a06333f1b8
+[main 6529672] Se añade capitulo 5
+ Date: Wed Oct 23 22:22:24 2024 +0100
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Capitulo5.txt
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log    
+commit 65296720abb4d584622baa807febdd2ce3b03fef (HEAD -> main)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:22:24 2024 +0100
+
+    Se añade capitulo 5
+
+commit 6a5cb22e6473b74d75544d34abcaec284a1fa936 (origin/main, origin/HEAD)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit 579c975dd288ca1835be21ed15090f71a3e53a66
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+
+commit 7078c24abe2e4e776b5bf6c304cdec048673830a
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 23:10:47 2024 +0100
+
+    cambios
+
+commit 42ef9837ea0849bf6c603a7bebd5a0932a09dcb1
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    cambios
+
+commit c77db0d4aa4bb69aff22af2cacda1af4f3b07d40
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit e73dfb277fd3dbac409eac629fc9d66d7ca17b8c
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    cambios
+
+commit dc796557ce0f3fff8dac1b8ab9a34e621e4d5378
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 22:45:26 2024 +0100
+
+    cambios
+
+commit 523b7d2449e8f36126c8c1a36fc3bd6a0734930c
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Cambios
+
+commit 9458af88019d4f49765ae0b09afdcf916cbac6cf
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:21:05 2024 +0100
+
+    Añado ejercicio2
+
+commit 09f66627968238aacdddfb29b074ecc17338797d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:14:11 2024 +0100
+
+    Revert "commit temporal"
+
+    This reverts commit 49544b3f8c18de52ffd6619fe7695f781378727e.
+
+commit 49544b3f8c18de52ffd6619fe7695f781378727e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:11:48 2024 +0100
+
+    commit temporal
+
+commit d7c3847fccf483e104b653554cc43a709bdccf92
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Wed Oct 23 18:04:18 2024 +0100
+
+    Ejercicio1
+
+commit 93d43be9dc7909d5af311ec2d7841b851b639d29 (tag: 1.0.0)
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 16:01:09 2024 +0100
+
+    Modificaciones en el README
+
+commit cfe3ef8d60a676073b53a1b2a04f4f2f0fa9dabb
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 15:57:13 2024 +0100
+
+    Solucionando conflicto bibliografía.
+
+commit 9965ee5f03d6fa66a2af02d492c318de383629e0
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:05:17 2024 +0100
+
+    Cambios
+
+commit 144840787a600c4fd80e6bbb6a01c320028c9b81
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 02:02:52 2024 +0100
+
+    Cambios
+
+commit 9ed9dffe58afd7e4d784334ec061e3affcca71f1
+Merge: eaff202 474a922
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:49:13 2024 +0100
+
+    cambios
+
+commit eaff20241a61354969dc3f4d7259b83caac4af51
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:47:40 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 474a922bf8ed4e74fcf2ad984fdfde0b5c4f14e9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:44:43 2024 +0100
+
+    Añadida nueva referencia bibliográfica.
+
+commit 8a878c5380617463b9baf7b65e9726e5f081c0ff
+Merge: f407bd0 d45a34d
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:35:28 2024 +0100
+
+    Merge branch 'bibliografia'
+
+commit f407bd08a953da117aaa98752a3ed593e683a4b8
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 40c296f69d9951446e3828f7f8e301eb3534e950
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit d45a34d2b281ee901fd8893113cf4df02f23f668
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:28:40 2024 +0100
+
+    Cambios
+
+commit 8c4fd67e366bea9a794b61a25cd84fc9f66000d4
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:24:47 2024 +0100
+
+    Añadida primera referencia bibliográfica.
+
+commit b79314ffaf320a62845817757bec7e03cd0f492e
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:22:58 2024 +0100
+
+    Cambios
+
+commit 0f1a97ea0946dfc14789c1c22c7338182a8d60d9
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:18:05 2024 +0100
+
+    capitulo.4 añadido.
+
+commit 78eb6b082d172b4b01476148e95fbfdcb9c30762
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:06:55 2024 +0100
+
+    Añadido el indice.
+
+commit f35f7fe2af38d8ada1537d677a6c750958a61a74
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 01:04:17 2024 +0100
+
+    Se crea el indice.
+
+commit 7e49370761f2ec0678da2c498a2163114023ba80
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:54:29 2024 +0100
+
+    capitulo 3 añadido.
+
+commit 12dbbfb5abd193c765574a5a63292be8bb4be866
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:45:02 2024 +0100
+
+    cambios realizados.
+
+commit 8114bc9814037ad0589f487bd405217626f19a77
+Author: nexphernandez <nicolaseh3b1112@gmail.com>
+Date:   Mon Oct 14 00:43:00 2024 +0100
+
+    Capitulo1 añadido.
+
+commit d22b24951cf408609fdda8ec0f3030bb595a5672
+Author: Nicolas Exposito Hernandez <nicolaseh3b1112@gmail.com>
+Date:   Thu Oct 10 18:00:34 2024 +0100
+
+    Initial commit
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit -m " Consigo hacer el git cherry pick"
+[main 731b409]  Consigo hacer el git cherry pick
+ 1 file changed, 3 deletions(-)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 752 bytes | 752.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/nexphernandez/ejercicio-git-libro
+   6a5cb22..731b409  main -> main
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+```
+
+## Ejercicio 4: Comparar ramas:
+
