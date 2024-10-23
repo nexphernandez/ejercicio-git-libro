@@ -1773,3 +1773,67 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
 ```
 
 ## Ejercicio 5:
+
+```Code
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "cambios"
+[main 2c69f92] cambios
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git push   
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 8.72 KiB | 4.36 MiB/s, done.  
+l object.
+To https://github.com/nexphernandez/ejercicio-git-libro    
+   731b409..2c69f92  main -> main
+t nueva-funcionalidad
+error: Your local changes to the following files would be o        README.md
+Please commit your changes or stash them before you switch 
+branches.
+Aborting
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout nueva-funcionalidad
+Switched to branch 'nueva-funcionalidad'
+t main
+error: Your local changes to the following files would be overwritten by checkout:
+Please commit your changes or stash them before you switch 
+branches.
+Aborting
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "cambios en la rama secundaria"
+[nueva-funcionalidad 5f94848] cambios en la rama secundaria 1 file changed, 1 insertion(+)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 486 bytes | 486.00 KiB/s, doneremote: Resolving deltas: 100% (4/4), completed with 4 local objects.                                                 0)
+To https://github.com/nexphernandez/ejercicio-git-libro    l objects.
+   2c69f92..29b2991  main -> main
+ueva-funcionalidad
+CONFLICT (content): Merge conflict in capitulos/capitulo2.tueva-funcionalidadxt
+Automatic merge failed; fix conflicts and then commit the rxtesult.                                                     esult.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "conflicto resuelto"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git push   
+Everything up-to-date
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git branch 
+* main
+  nueva-funcionalidad
+PS C:\Users\nico\Downloads\ejercicio-git-libro> 
+```
+
+## Ejercicio 6
+
+```Code
