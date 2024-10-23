@@ -649,6 +649,7 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 
 ```CODE
 
+<<<<<<< HEAD
 ```CODE
 PS C:\Users\nico\Downloads\ejercicio-git-libro> cd capitulos
 PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> cd capitulo1
@@ -708,4 +709,6 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 
 ```CODE
 
+=======
+>>>>>>> 9458af8 (Añado ejercicio2)
 ```
