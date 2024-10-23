@@ -710,5 +710,3 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 ```CODE
 
 =======
->>>>>>> 9458af8 (Añado ejercicio2)
-```
