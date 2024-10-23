@@ -649,6 +649,66 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
 
 ```CODE
 
+```
+```CODE
+PS C:\Users\nico\Downloads\ejercicio-git-libro> cd capitulos
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> cd capitulo1
+cd : No se encuentra la ruta de acceso 'C:\Users\nico\Down
+loads\ejercicio-git-libro\capitulos\capitulo1' porque no   
++ ~~~~~~~~~~~~
+  otFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.Powe  
+   rShell.Commands.SetLocationCommand
+ 
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> echo Linea de texto temporal >> .\capitulo1.txt
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> git add .
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> dit commit -m "commit temporal"
+dit : El término 'dit' no se reconoce como nombre de un 
+cmdlet, función, archivo de script o programa ejecutable.  
+correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
+    + CategoryInfo          : ObjectNotFound: (dit:String  
+   ) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException     
+ 
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> git commit -m "commit temporal"
+[main 49544b3] commit temporal
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> git revert
+usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>...
+   or: git revert (--continue | --skip | --abort | --quit) 
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue 
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit       
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer      
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conf
+#
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy        
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]reference      use the 'reference' format to refer to commits
+
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos> git revert HEAD
+[main 09f6662] Revert "commit temporal"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\nico\Downloads\ejercicio-git-libro\capitulos>
+```
+
+## Ejercicio 3: Aplicar cambios de otra rama con Cherry-pick
+
+```CODE
+
 <<<<<<< HEAD
 ```CODE
 PS C:\Users\nico\Downloads\ejercicio-git-libro> cd capitulos
