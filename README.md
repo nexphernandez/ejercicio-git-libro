@@ -1837,3 +1837,65 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
 ## Ejercicio 6
 
 ```Code
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git merge nueva-funcionalidad     
+Already up to date.
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git branch 
+* main
+  nueva-funcionalidad
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git log --oneline
+29b2991 cambios
+2c69f92 cambios
+89acf4e Cambios
+731b409  Consigo hacer el git cherry pick
+6529672 Se añade capitulo 5
+6a5cb22 Añado ejercicio2
+579c975 Initial commit
+7078c24 cambios
+42ef983 cambios
+c77db0d Añado ejercicio2
+e73dfb2 cambios
+dc79655 cambios
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git revert 
+-m 1 5f94848
+Auto-merging capitulos/capitulo2.txt
+CONFLICT (content): Merge conflict in capitulos/capitulo2.txterror: could not revert 5f94848... cambios en la rama secundariadaria
+hint: After resolving the conflicts, mark them with        
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".                             kip".
+hint: You can instead skip this commit with "git revert --s",kip".
+hint: To abort and get back to the state before "git revertflict false"",
+hint: run "git revert --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git revert 
+-m 1 5f94848
+Auto-merging capitulos/capitulo2.txt
+CONFLICT (content): Merge conflict in capitulos/capitulo2.txt
+error: could not revert 5f94848... cambios en la rama secundaria
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: run "git revert --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git revert -m 1 5f94848
+Auto-merging capitulos/capitulo2.txt
+CONFLICT (content): Merge conflict in capitulos/capitulo2.txt
+error: could not revert 5f94848... cambios en la rama secundaria
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git revert -m 1 5f94848
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\nico\Downloads\ejercicio-git-libro>
+```
+## Ejercicio 7: Eliminar una etiqueta:
+
+```Code
+
