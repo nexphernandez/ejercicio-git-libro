@@ -1752,3 +1752,22 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
 
 ## Ejercicio 4: Comparar ramas:
 
+```Code
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git add .  
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git commit 
+-m "Cambios"
+[main 89acf4e] Cambios
+ 1 file changed, 984 insertions(+)
+PS C:\Users\nico\Downloads\ejercicio-git-libro> git diff
+diff --git a/README.md b/README.md
+index ad96ff5..90723a0 100644
+--- a/README.md
++++ b/README.md
+@@ -1752,3 +1752,4 @@ PS C:\Users\nico\Downloads\ejercicio-git-libro>
+ 
+ ## Ejercicio 4: Comparar ramas:
+
++Cambio realizado para el ejecicio 4
+\ No newline at end of file
+PS C:\Users\nico\Downloads\ejercicio-git-libro> 
+```
