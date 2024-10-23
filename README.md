@@ -532,3 +532,60 @@ ph --all --oneline
 * 8114bc9 Capitulo1 añadido.
 * d22b249 Initial commit
 ```
+
+# Entornos de Desarrollo: Avanzando en Git "Creando tags (etiquetas)"
+
+## Ejercicio 1: Etiquetar una versión.
+
+```Code
+pro@jpexposito-VirtualBox:~$ git clone https://github.com/nexphernandez/ejercicio-git-libro
+Clonando en 'ejercicio-git-libro'...
+remote: Enumerating objects: 68, done.
+remote: Counting objects: 100% (68/68), done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 68 (delta 24), reused 62 (delta 21), pack-reused 0 (from 0)
+Recibiendo objetos: 100% (68/68), 12.46 KiB | 354.00 KiB/s, listo.
+Resolviendo deltas: 100% (24/24), listo.
+pro@jpexposito-VirtualBox:~$ cd ejercicio-git-libro
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ code .
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ ls -la
+total 44
+drwxrwxr-x  4 pro pro  4096 oct 17 18:12 .
+drwxr-x--- 23 pro pro  4096 oct 17 18:12 ..
+-rw-rw-r--  1 pro pro   306 oct 17 18:12 bibliografia.txt
+drwxrwxr-x  2 pro pro  4096 oct 17 18:12 capitulos
+drwxrwxr-x  8 pro pro  4096 oct 17 18:23 .git
+-rw-rw-r--  1 pro pro	56 oct 17 18:12 indice.txt
+-rw-rw-r--  1 pro pro 20373 oct 17 18:12 README.md
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ ls
+bibliografia.txt  capitulos  indice.txt  README.md
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git branch
+* main
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag -a <1.0.0> -m "Se crea la version 1.0.0"
+zsh: no existe el archivo o el directorio: 1.0.0
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag -a <1.0.0> -m "Se crea la version 1.0.0"
+zsh: no existe el archivo o el directorio: 1.0.0
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag -a <1.0.0> -m "Se crea la version 1.0.0"
+zsh: no existe el archivo o el directorio: 1.0.0
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag -a 1.0.0 -m "Se crea la version 1.0.0"
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git tag
+1.0.0
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git push
+Username for 'https://github.com': nexphernandez
+Password for 'https://nexphernandez@github.com':
+Everything up-to-date
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$ git push origin --tags
+Username for 'https://github.com': nexphernandez
+Password for 'https://nexphernandez@github.com':
+Enumerando objetos: 1, listo.
+Contando objetos: 100% (1/1), listo.
+Escribiendo objetos: 100% (1/1), 177 bytes | 177.00 KiB/s, listo.
+Total 1 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To https://github.com/nexphernandez/ejercicio-git-libro
+ * [new tag]     	1.0.0 -> 1.0.0
+pro@jpexposito-VirtualBox:~/ejercicio-git-libro$
+```
+
+## Ejercicio 2: Revertir un commit
+
